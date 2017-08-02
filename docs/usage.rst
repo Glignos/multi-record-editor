@@ -26,3 +26,4 @@ Usage
 =====
 
 .. automodule:: multiedit
+    
