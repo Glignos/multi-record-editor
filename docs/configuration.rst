@@ -25,5 +25,5 @@
 Configuration
 =============
 
-.. automodule:: multiedit.config
-   :members:
+# .. automodule:: multiedit.config
+#  :members:
