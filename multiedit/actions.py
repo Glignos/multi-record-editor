@@ -24,7 +24,7 @@ def apply_action(schema, record, keys, action,
         record[key]
         pass
     except KeyError:
-        record[key] = create_schema_record(schema, keys, value_to_input)
+        record.update(create_schema_record(schema, keys, value_to_input))
         return
     temp_record = record[key]
     if isinstance(temp_record, list):
@@ -75,7 +75,8 @@ def create_schema_record(schema, path, value):
                 temp_record[key] = [{}]
             temp_record = temp_record[key][0]
     temp_record[path[-1]] = value
-    if isinstance(record[path[0]], list):
-        return record[path[0]][0]
-    else:
-        return record[path[0]]
+    # if isinstance(record[path[0]], list):
+    #     return record[path[0]][0]
+    # else:
+    #     return record[path[0]]
+    return record

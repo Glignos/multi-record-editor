@@ -158,7 +158,7 @@ def test_record_creation():
     """should test sub_record creation for missing object"""
     key = ['abstracts', 'source']
     value = 'success'
-    target_object = {'source': 'success'}
+    target_object = {'abstracts': [{'source': 'success'}]}
     assert actions.create_schema_record(schema_1, key, value) == target_object
 
 
@@ -166,7 +166,7 @@ def test_record_creation_2():
     """should test sub_record creation for missing object"""
     key = ['source']
     value = 'success'
-    target_object = 'success'
+    target_object = {'source': 'success'}
     assert actions.create_schema_record(schema_2, key, value) == target_object
 
 
