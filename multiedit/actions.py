@@ -58,22 +58,23 @@ def create_schema_record(schema, path, value):
     """Object creation in par with the schema."""
     record = {}
     temp_record = record
-    if schema['type'] == 'array':
-        schema = schema['items']['properties']
-    elif schema['type'] == 'object':
-        schema = schema['properties']
+    new_schema = schema
+    if new_schema['type'] == 'array':
+        new_schema = new_schema['items']['properties']
+    elif new_schema['type'] == 'object':
+        new_schema = new_schema['properties']
     for key in path:
-        schema = schema[key]
-        if schema['type'] == 'object':
-            schema = schema['properties'][key]
+        new_schema = new_schema[key]
+        if new_schema['type'] == 'object':
+            new_schema = schema['properties']
             temp_record[key] = {}
             temp_record = temp_record[key]
 
-        elif schema['type'] == 'array':
-            if schema['items']['type'] == 'object':
-                schema = schema['items']['properties']
+        elif new_schema['type'] == 'array':
+            if new_schema['items']['type'] == 'object':
+                new_schema = new_schema['items']['properties']
                 temp_record[key] = [{}]
-            temp_record = temp_record[key][0]
+                temp_record = temp_record[key][0]
     temp_record[path[-1]] = value
     # if isinstance(record[path[0]], list):
     #     return record[path[0]][0]

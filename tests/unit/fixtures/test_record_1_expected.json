@@ -1,0 +1,2314 @@
+{"$schema": "http://localhost:5000/schemas/records/hep.json",
+    "_collections": [
+      "Literature"
+    ],
+    "_created": "2017-07-24T08:53:39.390486+00:00",
+    "_updated": "2017-07-24T08:53:39.390492+00:00",
+    "abstracts": [
+      {
+        "abstract_source_suggest": {
+          "input": "arXiv",
+          "output": "arXiv"
+        },
+        "source": "arXiv",
+        "value": "Holographic RG flows are studied in an Einstein-dilaton theory with a general potential. The superpotential formalism is utilized in order to characterize and classify all solutions that are associated to asymptotically AdS space-times. Such solutions correspond to holographic RG flows and are characterized by their holographic $\\beta$-functions. Novel solutions are found that have exotic properties from a RG point-of view. Some have $\\beta$-functions that are defined patch-wise and lead to flows where the $\\beta$-function changes sign without the flow stopping. Others describe flows that end in non-neighboring extrema in field space. Finally others describe regular flows between two minima of the potential and correspond holographically to flows driven by the VEV of an irrelevant operator in the UV CFT."
+      }
+    ],
+    "arxiv_eprints": [
+      {
+        "categories": [
+          "hep-th"
+        ],
+        "value": "1611.05493"
+      },
+      {
+        "categories": [
+          "Success"
+        ]
+      }
+    ],
+    "authors": [
+      {
+        "full_name": "Kiritsis, Elias",
+        "ids": [
+          {
+            "schema": "INSPIRE BAI",
+            "value": "E.Kiritsis.1"
+          }
+        ],
+        "name_suggest": {
+          "input": [
+            "E Kiritsis",
+            "Elias Kiritsis",
+            "Kiritsis",
+            "Kiritsis E",
+            "Kiritsis Elias",
+            "Kiritsis, E",
+            "Kiritsis, Elias"
+          ],
+          "output": "Kiritsis, Elias",
+          "payload": {
+            "bai": "E.Kiritsis.1"
+          }
+        },
+        "name_variations": [
+          "E Kiritsis",
+          "Elias Kiritsis",
+          "Kiritsis",
+          "Kiritsis E",
+          "Kiritsis Elias",
+          "Kiritsis, E",
+          "Kiritsis, Elias"
+        ],
+        "signature_block": "CARATSe",
+        "uuid": "eb460e78-eef6-4a17-a094-8864faae28a1"
+      },
+      {
+        "full_name": "Nitti, Francesco",
+        "ids": [
+          {
+            "schema": "INSPIRE BAI",
+            "value": "F.Nitti.1"
+          }
+        ],
+        "name_suggest": {
+          "input": [
+            "F Nitti",
+            "Francesco Nitti",
+            "Nitti",
+            "Nitti F",
+            "Nitti Francesco",
+            "Nitti, F",
+            "Nitti, Francesco"
+          ],
+          "output": "Nitti, Francesco",
+          "payload": {
+            "bai": "F.Nitti.1"
+          }
+        },
+        "name_variations": [
+          "F Nitti",
+          "Francesco Nitti",
+          "Nitti",
+          "Nitti F",
+          "Nitti Francesco",
+          "Nitti, F",
+          "Nitti, Francesco"
+        ],
+        "signature_block": "NATf",
+        "uuid": "efb65628-98ca-4b7d-b981-f22e696977f3"
+      },
+      {
+        "full_name": "Pimenta, Leandro Silva",
+        "ids": [
+          {
+            "schema": "INSPIRE BAI",
+            "value": "L.S.Pimenta.1"
+          }
+        ],
+        "name_suggest": {
+          "input": [
+            "L Pimenta",
+            "L S Pimenta",
+            "L Silva Pimenta",
+            "Leandro Pimenta",
+            "Leandro S Pimenta",
+            "Leandro Silva Pimenta",
+            "Pimenta",
+            "Pimenta L",
+            "Pimenta L S",
+            "Pimenta L Silva",
+            "Pimenta Leandro",
+            "Pimenta Leandro S",
+            "Pimenta Leandro Silva",
+            "Pimenta S",
+            "Pimenta Silva",
+            "Pimenta, L",
+            "Pimenta, L S",
+            "Pimenta, L Silva",
+            "Pimenta, Leandro",
+            "Pimenta, Leandro S",
+            "Pimenta, Leandro Silva",
+            "Pimenta, S",
+            "Pimenta, Silva",
+            "S Pimenta",
+            "Silva Pimenta"
+          ],
+          "output": "Pimenta, Leandro Silva",
+          "payload": {
+            "bai": "L.S.Pimenta.1"
+          }
+        },
+        "name_variations": [
+          "L Pimenta",
+          "L S Pimenta",
+          "L Silva Pimenta",
+          "Leandro Pimenta",
+          "Leandro S Pimenta",
+          "Leandro Silva Pimenta",
+          "Pimenta",
+          "Pimenta L",
+          "Pimenta L S",
+          "Pimenta L Silva",
+          "Pimenta Leandro",
+          "Pimenta Leandro S",
+          "Pimenta Leandro Silva",
+          "Pimenta S",
+          "Pimenta Silva",
+          "Pimenta, L",
+          "Pimenta, L S",
+          "Pimenta, L Silva",
+          "Pimenta, Leandro",
+          "Pimenta, Leandro S",
+          "Pimenta, Leandro Silva",
+          "Pimenta, S",
+          "Pimenta, Silva",
+          "S Pimenta",
+          "Silva Pimenta"
+        ],
+        "signature_block": "PANANTl",
+        "uuid": "afd54bfa-36b5-4422-93d7-7169ce167391"
+      }
+    ],
+    "citeable": true,
+    "control_number": 1498589,
+    "core": true,
+    "document_type": [
+      "article"
+    ],
+    "earliest_date": "2016-11-16",
+    "facet_inspire_doc_type": [
+      "article"
+    ],
+    "inspire_categories": [
+      {
+        "source": "undefined",
+        "term": "Theory-HEP"
+      }
+    ],
+    "legacy_creation_date": "2016-11-18",
+    "license": [
+      {
+        "imposing": "arXiv",
+        "url": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/"
+      }
+    ],
+    "number_of_pages": 100,
+    "preprint_date": "2016-11-16",
+    "public_notes": [
+      {
+        "source": "arXiv",
+        "value": "100 pages, 36 figures"
+      },
+      {
+        "value": "Success"
+      }
+    ],
+    "references": [
+      {
+        "reference": {
+          "authors": [
+            {
+              "full_name": "Wilson, K.G."
+            }
+          ],
+          "label": "1",
+          "misc": [
+            "Renormalization group and critical phenomena. 1. Renormalization group and the Kadanoff scaling picture"
+          ],
+          "publication_info": {
+            "artid": "3174",
+            "journal_title": "Phys.Rev.",
+            "journal_volume": "B4",
+            "page_start": "3174",
+            "year": 1971
+          }
+        }
+      },
+      {
+        "reference": {
+          "label": "1",
+          "misc": [
+            "; Renormalization group and critical phenomena. 2. Phase space cell analysis of critical behavior"
+          ],
+          "publication_info": {
+            "artid": "3184",
+            "journal_title": "Phys.Rev.",
+            "journal_volume": "B4",
+            "page_start": "3184",
+            "year": 1971
+          }
+        }
+      },
+      {
+        "reference": {
+          "authors": [
+            {
+              "full_name": "Wetterich, C."
+            }
+          ],
+          "label": "2",
+          "misc": [
+            "Exact evolution equation for the effective potential"
+          ],
+          "publication_info": {
+            "artid": "90",
+            "journal_title": "Phys.Lett.",
+            "journal_volume": "B301",
+            "page_start": "90",
+            "year": 1993
+          }
+        }
+      },
+      {
+        "reference": {
+          "arxiv_eprint": "hep-ph/0005122",
+          "authors": [
+            {
+              "full_name": "Berges, J."
+            },
+            {
+              "full_name": "Tetradis, N."
+            },
+            {
+              "full_name": "Wetterich, C."
+            }
+          ],
+          "label": "2",
+          "misc": [
+            "Non-perturbative renormalization flow in quantum field theory and statistical physics ; [ArXiv:"
+          ],
+          "publication_info": {
+            "artid": "223",
+            "journal_title": "Phys.Rept.",
+            "journal_volume": "363",
+            "page_start": "223",
+            "year": 2002
+          }
+        }
+      },
+      {
+        "reference": {
+          "authors": [
+            {
+              "full_name": "Polchinski, J."
+            }
+          ],
+          "label": "3",
+          "misc": [
+            "Renormalization and Effective Lagrangians"
+          ],
+          "publication_info": {
+            "artid": "269",
+            "journal_title": "Nucl.Phys.",
+            "journal_volume": "B231",
+            "page_start": "269",
+            "year": 1984
+          }
+        }
+      },
+      {
+        "curated_relation": false,
+        "recid": 451647,
+        "record": {
+          "$ref": "http://localhost:5000/api/literature/451647"
+        },
+        "reference": {
+          "arxiv_eprint": "hep-th/9711200",
+          "authors": [
+            {
+              "full_name": "Maldacena, J.M."
+            },
+            {
+              "full_name": "N, TheLarge"
+            }
+          ],
+          "label": "4",
+          "misc": [
+            "limit of superconformal field theories and supergravity [ArXiv:"
+          ],
+          "publication_info": {
+            "artid": "23",
+            "journal_title": "Adv.Theor.Math.Phys.",
+            "journal_volume": "2",
+            "page_start": "23",
+            "year": 1999
+          }
+        }
+      },
+      {
+        "reference": {
+          "arxiv_eprint": "hep-th/9802109",
+          "authors": [
+            {
+              "full_name": "Gubser, S.S."
+            },
+            {
+              "full_name": "Klebanov, I.R."
+            },
+            {
+              "full_name": "Polyakov, A.M."
+            }
+          ],
+          "label": "5",
+          "misc": [
+            "Gauge theory correlators from noncritical string theory [ArXiv:"
+          ],
+          "publication_info": {
+            "artid": "105",
+            "journal_title": "Phys.Lett.",
+            "journal_volume": "B428",
+            "page_start": "105",
+            "year": 1998
+          }
+        }
+      },
+      {
+        "reference": {
+          "arxiv_eprint": "hep-th/9802150",
+          "authors": [
+            {
+              "full_name": "Witten, E."
+            }
+          ],
+          "label": "6",
+          "misc": [
+            "Anti-de Sitter space and holography [ArXiv:"
+          ],
+          "publication_info": {
+            "artid": "253",
+            "journal_title": "Adv.Theor.Math.Phys.",
+            "journal_volume": "2",
+            "page_start": "253",
+            "year": 1998
+          }
+        }
+      },
+      {
+        "reference": {
+          "arxiv_eprint": "hep-th/9810126",
+          "authors": [
+            {
+              "full_name": "Girardello, L."
+            },
+            {
+              "full_name": "Petrini, M."
+            },
+            {
+              "full_name": "Porrati, M."
+            },
+            {
+              "full_name": "Zaffaroni, A."
+            }
+          ],
+          "label": "7",
+          "misc": [
+            "Novel local CFT and exact results on perturbations of N=4 superYang Mills from AdS dynamics [ArXiv:"
+          ],
+          "publication_info": {
+            "artid": "022",
+            "journal_title": "JHEP",
+            "journal_volume": "9812",
+            "page_start": "022",
+            "year": 1998
+          }
+        }
+      },
+      {
+        "reference": {
+          "arxiv_eprint": "hep-th/9904017",
+          "authors": [
+            {
+              "full_name": "Freedman, D.Z."
+            },
+            {
+              "full_name": "Gubser, S.S."
+            },
+            {
+              "full_name": "Pilch, K."
+            },
+            {
+              "full_name": "Warner, N.P."
+            }
+          ],
+          "label": "8",
+          "misc": [
+            "Renormalization group flows from holography supersymmetry and a c-theorem [ArXiv:"
+          ],
+          "publication_info": {
+            "artid": "363",
+            "journal_title": "Adv.Theor.Math.Phys.",
+            "journal_volume": "3",
+            "page_start": "363",
+            "year": 1999
+          }
+        }
+      },
+      {
+        "reference": {
+          "authors": [
+            {
+              "full_name": "Ceresole, A."
+            },
+            {
+              "full_name": "Dall\u2019Agata, G."
+            }
+          ],
+          "label": "9",
+          "publication_info": {
+            "artid": "110",
+            "journal_title": "JHEP",
+            "journal_volume": "0703",
+            "page_start": "110",
+            "year": 2007
+          },
+          "title": {
+            "title": "Flow Equations for Non-BPS Extremal Black Holes"
+          }
+        }
+      },
+      {
+        "reference": {
+          "label": "9",
+          "misc": [
+            "[ArXiv:hep-th/702088]"
+          ]
+        }
+      },
+      {
+        "reference": {
+          "arxiv_eprint": "1006.1263",
+          "authors": [
+            {
+              "full_name": "Myers, R.C."
+            },
+            {
+              "full_name": "Sinha, A."
+            }
+          ],
+          "label": "10",
+          "misc": [
+            "Seeing a c-theorem with holography ; [hep-th]"
+          ],
+          "publication_info": {
+            "artid": "046006",
+            "journal_title": "Phys.Rev.",
+            "journal_volume": "D82",
+            "year": 2010
+          }
+        }
+      },
+      {
+        "reference": {
+          "arxiv_eprint": "hep-th/9806217",
+          "authors": [
+            {
+              "full_name": "Akhmedov, E.T."
+            },
+            {
+              "full_name": "Remark, A"
+            }
+          ],
+          "label": "11",
+          "misc": [
+            "on the AdS / CFT correspondence and the renormalization group flow ; [ArXiv:"
+          ],
+          "publication_info": {
+            "artid": "152",
+            "journal_title": "Phys.Lett.",
+            "journal_volume": "B442",
+            "page_start": "152",
+            "year": 1998
+          }
+        }
+      },
+      {
+        "reference": {
+          "arxiv_eprint": "hep-th/9912012",
+          "authors": [
+            {
+              "full_name": "Boer, J.de"
+            },
+            {
+              "full_name": "Verlinde, E.P."
+            },
+            {
+              "full_name": "Verlinde, H.L."
+            }
+          ],
+          "label": "12",
+          "misc": [
+            "On the holographic renormalization group [ArXiv:"
+          ],
+          "publication_info": {
+            "artid": "003",
+            "journal_title": "JHEP",
+            "journal_volume": "0008",
+            "page_start": "003",
+            "year": 2000
+          }
+        }
+      },
+      {
+        "reference": {
+          "arxiv_eprint": "1310.0858",
+          "authors": [
+            {
+              "full_name": "Bourdier, J."
+            },
+            {
+              "full_name": "Kiritsis, E."
+            }
+          ],
+          "label": "13",
+          "misc": [
+            "Holographic RG flows and nearly-marginal operators [hep-th]"
+          ],
+          "publication_info": {
+            "artid": "035011",
+            "journal_title": "Class.Quant.Grav.",
+            "journal_volume": "31",
+            "year": 2014
+          }
+        }
+      },
+      {
+        "reference": {
+          "arxiv_eprint": "1205.6205",
+          "authors": [
+            {
+              "full_name": "Kiritsis, E."
+            },
+            {
+              "full_name": "Niarchos, V."
+            }
+          ],
+          "label": "14",
+          "misc": [
+            "The holographic quantum effective potential at finite temperature and density [hep-th]"
+          ],
+          "publication_info": {
+            "artid": "164",
+            "journal_title": "JHEP",
+            "journal_volume": "1208",
+            "page_start": "164",
+            "year": 2012
+          }
+        }
+      },
+      {
+        "reference": {
+          "arxiv_eprint": "1401.0888",
+          "authors": [
+            {
+              "full_name": "Kiritsis, E."
+            },
+            {
+              "full_name": "Li, W."
+            },
+            {
+              "full_name": "Nitti, F."
+            }
+          ],
+          "label": "15",
+          "misc": [
+            "Holographic RG flow and the Quantum Effective Action ; [hep-th]"
+          ],
+          "publication_info": {
+            "artid": "389",
+            "journal_title": "Fortsch.Phys.",
+            "journal_volume": "62",
+            "page_start": "389",
+            "year": 2014
+          }
+        }
+      },
+      {
+        "reference": {
+          "arxiv_eprint": "hep-th/0404176",
+          "authors": [
+            {
+              "full_name": "Papadimitriou, I."
+            },
+            {
+              "full_name": "Skenderis, K."
+            }
+          ],
+          "label": "16",
+          "misc": [
+            "AdS/CFT correspondence and geometry [ArXiv:"
+          ],
+          "publication_info": {
+            "journal_title": "IRMA Lect.Math.Theor.Phys.",
+            "journal_volume": "8",
+            "page_end": "3",
+            "page_start": "7",
+            "year": 2005
+          }
+        }
+      },
+      {
+        "reference": {
+          "arxiv_eprint": "hep-th/0703152",
+          "authors": [
+            {
+              "full_name": "Papadimitriou, I."
+            }
+          ],
+          "label": "17",
+          "misc": [
+            "Multi-Trace Deformations in AdS/CFT: Exploring the Vacuum Structure of the Deformed CFT [ArXiv:"
+          ],
+          "publication_info": {
+            "artid": "075",
+            "journal_title": "JHEP",
+            "journal_volume": "0705",
+            "page_start": "075",
+            "year": 2007
+          }
+        }
+      },
+      {
+        "reference": {
+          "arxiv_eprint": "1106.4826",
+          "authors": [
+            {
+              "full_name": "Papadimitriou, I."
+            }
+          ],
+          "label": "18",
+          "misc": [
+            "Holographic Renormalization of general dilaton-axion gravity ; [hep-th]"
+          ],
+          "publication_info": {
+            "artid": "119",
+            "journal_title": "JHEP",
+            "journal_volume": "1108",
+            "page_start": "119",
+            "year": 2011
+          }
+        }
+      },
+      {
+        "reference": {
+          "arxiv_eprint": "0707.1324",
+          "authors": [
+            {
+              "full_name": "G\u00fcrsoy, U."
+            },
+            {
+              "full_name": "Kiritsis, E."
+            }
+          ],
+          "label": "19",
+          "misc": [
+            "Exploring improved holographic theories for QCD: Part I [hep-th]"
+          ],
+          "publication_info": {
+            "artid": "032",
+            "journal_title": "JHEP",
+            "journal_volume": "0802",
+            "page_start": "032",
+            "year": 2008
+          }
+        }
+      },
+      {
+        "reference": {
+          "arxiv_eprint": "0707.1349",
+          "authors": [
+            {
+              "full_name": "G\u00fcrsoy, U."
+            },
+            {
+              "full_name": "Kiritsis, E."
+            },
+            {
+              "full_name": "Nitti, F."
+            }
+          ],
+          "label": "19",
+          "misc": [
+            "Exploring improved holographic theories for QCD: Part II [hep-th]"
+          ],
+          "publication_info": {
+            "artid": "019",
+            "journal_title": "JHEP",
+            "journal_volume": "0802",
+            "page_start": "019",
+            "year": 2008
+          }
+        }
+      },
+      {
+        "reference": {
+          "arxiv_eprint": "1010.1264",
+          "authors": [
+            {
+              "full_name": "Heemskerk, I."
+            },
+            {
+              "full_name": "Polchinski, J."
+            }
+          ],
+          "label": "20",
+          "misc": [
+            "Holographic and Wilsonian Renormalization Groups [hep-th]"
+          ],
+          "publication_info": {
+            "artid": "031",
+            "journal_title": "JHEP",
+            "journal_volume": "1106",
+            "page_start": "031",
+            "year": 2011
+          }
+        }
+      },
+      {
+        "reference": {
+          "arxiv_eprint": "1010.4036",
+          "authors": [
+            {
+              "full_name": "Faulkner, T."
+            },
+            {
+              "full_name": "Liu, H."
+            },
+            {
+              "full_name": "Rangamani, M."
+            }
+          ],
+          "label": "21",
+          "misc": [
+            "Integrating out geometry: Holographic Wilsonian RG and the membrane paradigm [hep-th]"
+          ],
+          "publication_info": {
+            "artid": "051",
+            "journal_title": "JHEP",
+            "journal_volume": "1108",
+            "page_start": "051",
+            "year": 2011
+          }
+        }
+      },
+      {
+        "reference": {
+          "arxiv_eprint": "1410.1091",
+          "authors": [
+            {
+              "full_name": "Kiritsis, E."
+            },
+            {
+              "full_name": "Li, W."
+            },
+            {
+              "full_name": "Nitti, F."
+            }
+          ],
+          "label": "22",
+          "misc": [
+            "On the gluonic operator effective potential in holographic Yang-Mills theory ; [hep-th]"
+          ],
+          "publication_info": {
+            "artid": "125",
+            "journal_title": "JHEP",
+            "journal_volume": "1504",
+            "page_start": "125",
+            "year": 2015
+          }
+        }
+      },
+      {
+        "reference": {
+          "arxiv_eprint": "1505.04131",
+          "authors": [
+            {
+              "full_name": "Lindgren, J."
+            },
+            {
+              "full_name": "Papadimitriou, I."
+            },
+            {
+              "full_name": "Taliotis, A."
+            },
+            {
+              "full_name": "Vanhoof, J."
+            }
+          ],
+          "label": "23",
+          "misc": [
+            "[hep-th]"
+          ],
+          "publication_info": {
+            "artid": "094",
+            "journal_title": "JHEP",
+            "journal_volume": "1507",
+            "page_start": "094",
+            "year": 2015
+          }
+        }
+      },
+      {
+        "reference": {
+          "authors": [
+            {
+              "full_name": "Cornwall, J.M."
+            },
+            {
+              "full_name": "Jackiw, R."
+            },
+            {
+              "full_name": "Tomboulis, E."
+            }
+          ],
+          "label": "24",
+          "misc": [
+            "Effective Action for Composite Operators"
+          ],
+          "publication_info": {
+            "artid": "2428",
+            "journal_title": "Phys.Rev.",
+            "journal_volume": "D10",
+            "page_start": "2428",
+            "year": 1974
+          }
+        }
+      },
+      {
+        "reference": {
+          "arxiv_eprint": "1207.2325",
+          "authors": [
+            {
+              "full_name": "Kiritsis, E."
+            }
+          ],
+          "label": "25",
+          "misc": [
+            "Lorentz violation, Gravity, Dissipation and Holography ; [hep-th]"
+          ],
+          "publication_info": {
+            "artid": "030",
+            "journal_title": "JHEP",
+            "journal_volume": "1301",
+            "page_start": "030",
+            "year": 2013
+          }
+        }
+      },
+      {
+        "reference": {
+          "arxiv_eprint": "0912.5223",
+          "authors": [
+            {
+              "full_name": "Lee, S.S."
+            }
+          ],
+          "label": "26",
+          "misc": [
+            "Holographic description of quantum field theory ;"
+          ],
+          "publication_info": {
+            "artid": "567",
+            "journal_title": "Nucl.Phys.",
+            "journal_volume": "B832",
+            "page_start": "567",
+            "year": 2010
+          }
+        }
+      },
+      {
+        "reference": {
+          "arxiv_eprint": "1011.1474",
+          "label": "26",
+          "misc": [
+            "[hep-th]; Holographic description of large N gauge theory ; [hep-th]"
+          ],
+          "publication_info": {
+            "artid": "143",
+            "journal_title": "Nucl.Phys.",
+            "journal_volume": "B851",
+            "page_start": "143",
+            "year": 2011
+          }
+        }
+      },
+      {
+        "reference": {
+          "arxiv_eprint": "1305.3908",
+          "authors": [
+            {
+              "full_name": "Lee, S.S."
+            }
+          ],
+          "label": "27",
+          "misc": [
+            "Quantum Renormalization Group and Holography ; [hep-th]"
+          ],
+          "publication_info": {
+            "artid": "076",
+            "journal_title": "JHEP",
+            "journal_volume": "1401",
+            "page_start": "076",
+            "year": 2014
+          }
+        }
+      },
+      {
+        "reference": {
+          "arxiv_eprint": "1503.06474",
+          "authors": [
+            {
+              "full_name": "Lunts, P."
+            },
+            {
+              "full_name": "Bhattacharjee, S."
+            },
+            {
+              "full_name": "Miller, J."
+            },
+            {
+              "full_name": "Schnetter, E."
+            },
+            {
+              "full_name": "Kim, Y.B."
+            },
+            {
+              "full_name": "Lee, S.S."
+            }
+          ],
+          "label": "27",
+          "misc": [
+            "Ab initio holography ; [hep-th]"
+          ],
+          "publication_info": {
+            "artid": "107",
+            "journal_title": "JHEP",
+            "journal_volume": "1508",
+            "page_start": "107",
+            "year": 2015
+          }
+        }
+      },
+      {
+        "reference": {
+          "authors": [
+            {
+              "full_name": "Giveon, A."
+            },
+            {
+              "full_name": "Halpern, M.B."
+            },
+            {
+              "full_name": "Kiritsis, E.B."
+            },
+            {
+              "full_name": "Obers, N.A."
+            }
+          ],
+          "label": "28",
+          "misc": [
+            "Exact C-function and C-theorem on affine-Virasoro space"
+          ],
+          "publication_info": {
+            "artid": "655",
+            "journal_title": "Nucl.Phys.",
+            "journal_volume": "B357",
+            "page_start": "655",
+            "year": 1991
+          }
+        }
+      },
+      {
+        "reference": {
+          "authors": [
+            {
+              "full_name": "Halpern, M."
+            }
+          ],
+          "label": "29",
+          "misc": [
+            "(unpublished)"
+          ],
+          "publication_info": {
+            "year": 1995
+          }
+        }
+      },
+      {
+        "reference": {
+          "arxiv_eprint": "hep-th/9501144",
+          "authors": [
+            {
+              "full_name": "Halpern, M.B."
+            },
+            {
+              "full_name": "Kiritsis, E."
+            },
+            {
+              "full_name": "Obers, N.A."
+            },
+            {
+              "full_name": "Clubok, K."
+            }
+          ],
+          "label": "30",
+          "misc": [
+            "Irrational conformal field theory [ArXiv:"
+          ],
+          "publication_info": {
+            "artid": "1",
+            "journal_title": "Phys.Rept.",
+            "journal_volume": "265",
+            "page_start": "1",
+            "year": 1996
+          }
+        }
+      },
+      {
+        "reference": {
+          "authors": [
+            {
+              "full_name": "Cardy, J.L."
+            }
+          ],
+          "label": "31",
+          "misc": [
+            "Is There a c-theorem in four dimensions?"
+          ],
+          "publication_info": {
+            "artid": "749",
+            "journal_title": "Phys.Lett.",
+            "journal_volume": "B215",
+            "page_start": "749",
+            "year": 1988
+          }
+        }
+      },
+      {
+        "reference": {
+          "arxiv_eprint": "1107.3987",
+          "authors": [
+            {
+              "full_name": "Komargodski, Z."
+            },
+            {
+              "full_name": "Schwimmer, A."
+            }
+          ],
+          "label": "32",
+          "misc": [
+            "On Renormalization Group Flows in Four Dimensions ; [hep-th]"
+          ],
+          "publication_info": {
+            "artid": "099",
+            "journal_title": "JHEP",
+            "journal_volume": "1112",
+            "page_start": "099",
+            "year": 2011
+          }
+        }
+      },
+      {
+        "reference": {
+          "authors": [
+            {
+              "full_name": "Osborn, H."
+            }
+          ],
+          "label": "33",
+          "misc": [
+            "Derivation of a Four-dimensional c Theorem for renormaliseable quantum field theories"
+          ],
+          "publication_info": {
+            "artid": "97",
+            "journal_title": "Phys.Lett.",
+            "journal_volume": "B222",
+            "page_start": "97",
+            "year": 1989
+          }
+        }
+      },
+      {
+        "reference": {
+          "label": "33",
+          "misc": [
+            "; Weyl consistency conditions and a local renormalization group equation for general renormalisable field theories"
+          ],
+          "publication_info": {
+            "artid": "486",
+            "journal_title": "Nucl.Phys.",
+            "journal_volume": "B363",
+            "page_start": "486",
+            "year": 1991
+          }
+        }
+      },
+      {
+        "reference": {
+          "authors": [
+            {
+              "full_name": "Jack, I."
+            },
+            {
+              "full_name": "Osborn, H."
+            }
+          ],
+          "label": "34",
+          "misc": [
+            "Analogs of the c-theorem for four-dimensional renormalisable field theories"
+          ],
+          "publication_info": {
+            "artid": "647",
+            "journal_title": "Nucl.Phys.",
+            "journal_volume": "B343",
+            "page_start": "647",
+            "year": 1990
+          }
+        }
+      },
+      {
+        "reference": {
+          "arxiv_eprint": "1312.0428",
+          "authors": [
+            {
+              "full_name": "Jack, I."
+            },
+            {
+              "full_name": "Osborn, H."
+            }
+          ],
+          "label": "34",
+          "misc": [
+            "Constraints on RG Flow for Four Dimensional Quantum Field Theories ; [hep-th]"
+          ],
+          "publication_info": {
+            "artid": "425",
+            "journal_title": "Nucl.Phys.",
+            "journal_volume": "B883",
+            "page_start": "425",
+            "year": 2014
+          }
+        }
+      },
+      {
+        "reference": {
+          "arxiv_eprint": "1101.5385",
+          "authors": [
+            {
+              "full_name": "El-Showk, S."
+            },
+            {
+              "full_name": "Nakayama, Y."
+            },
+            {
+              "full_name": "Rychkov, S."
+            }
+          ],
+          "label": "35",
+          "misc": [
+            "What Maxwell Theory in d=4 teaches us about scale and conformal invariance [hep-th]"
+          ],
+          "publication_info": {
+            "artid": "578",
+            "journal_title": "Nucl.Phys.",
+            "journal_volume": "B848",
+            "page_start": "578",
+            "year": 2011
+          }
+        }
+      },
+      {
+        "reference": {
+          "arxiv_eprint": "1204.5221",
+          "authors": [
+            {
+              "full_name": "Luty, M.A."
+            },
+            {
+              "full_name": "Polchinski, J."
+            },
+            {
+              "full_name": "Rattazzi, R."
+            }
+          ],
+          "label": "36",
+          "misc": [
+            "The a-theorem and the Asymptotics of 4D Quantum Field Theory [hep-th]"
+          ],
+          "publication_info": {
+            "artid": "152",
+            "journal_title": "JHEP",
+            "journal_volume": "1301",
+            "page_start": "152",
+            "year": 2013
+          }
+        }
+      },
+      {
+        "reference": {
+          "arxiv_eprint": "1309.2921",
+          "authors": [
+            {
+              "full_name": "Dymarsky, A."
+            },
+            {
+              "full_name": "Komargodski, Z."
+            },
+            {
+              "full_name": "Schwimmer, A."
+            },
+            {
+              "full_name": "Theisen, S."
+            }
+          ],
+          "label": "37",
+          "misc": [
+            "On Scale and Conformal Invariance in Four Dimensions [hep-th]"
+          ],
+          "publication_info": {
+            "artid": "171",
+            "journal_title": "JHEP",
+            "journal_volume": "1510",
+            "page_start": "171",
+            "year": 2015
+          }
+        }
+      },
+      {
+        "reference": {
+          "arxiv_eprint": "1402.6322",
+          "authors": [
+            {
+              "full_name": "Dymarsky, A."
+            },
+            {
+              "full_name": "Farnsworth, K."
+            },
+            {
+              "full_name": "Komargodski, Z."
+            },
+            {
+              "full_name": "Luty, M.A."
+            },
+            {
+              "full_name": "Prilepina, V."
+            }
+          ],
+          "label": "37",
+          "misc": [
+            "Scale Invariance, Conformality, and Generalized Free Fields ; [hep-th]"
+          ],
+          "publication_info": {
+            "artid": "099",
+            "journal_title": "JHEP",
+            "journal_volume": "1602",
+            "page_start": "099",
+            "year": 2016
+          }
+        }
+      },
+      {
+        "reference": {
+          "arxiv_eprint": "1302.0884",
+          "authors": [
+            {
+              "full_name": "Nakayama, Y."
+            }
+          ],
+          "label": "38",
+          "misc": [
+            "Scale invariance vs conformal invariance ; [hep-th]"
+          ],
+          "publication_info": {
+            "artid": "1",
+            "journal_title": "Phys.Rept.",
+            "journal_volume": "569",
+            "page_start": "1",
+            "year": 2015
+          }
+        }
+      },
+      {
+        "reference": {
+          "authors": [
+            {
+              "full_name": "Glazek, S.D."
+            },
+            {
+              "full_name": "Renormalization, K.G.Wilson"
+            }
+          ],
+          "label": "39",
+          "misc": [
+            "of overlapping transverse divergences in a model light-front Hamiltonian"
+          ],
+          "publication_info": {
+            "artid": "4657",
+            "journal_title": "Phys.Rev.",
+            "journal_volume": "D47",
+            "page_start": "4657",
+            "year": 1993
+          }
+        }
+      },
+      {
+        "reference": {
+          "arxiv_eprint": "nucl-th/9906032",
+          "authors": [
+            {
+              "full_name": "Bedaque, P.F."
+            },
+            {
+              "full_name": "Hammer, H.W."
+            },
+            {
+              "full_name": "Kolck, U.van"
+            }
+          ],
+          "label": "40",
+          "misc": [
+            "Effective theory of the triton ; [ArXiv:"
+          ],
+          "publication_info": {
+            "artid": "357",
+            "journal_title": "Nucl.Phys.",
+            "journal_volume": "A676",
+            "page_start": "357",
+            "year": 2000
+          }
+        }
+      },
+      {
+        "reference": {
+          "arxiv_eprint": "hep-th/0312141",
+          "authors": [
+            {
+              "full_name": "LeClair, A."
+            },
+            {
+              "full_name": "Roman, J.M."
+            },
+            {
+              "full_name": "Sierra, G."
+            }
+          ],
+          "label": "41",
+          "misc": [
+            "Log periodic behavior of finite size effects in field theories with RG limit cycles [ArXiv:"
+          ],
+          "publication_info": {
+            "artid": "407",
+            "journal_title": "Nucl.Phys.",
+            "journal_volume": "B700",
+            "page_start": "407",
+            "year": 2004
+          }
+        }
+      },
+      {
+        "reference": {
+          "authors": [
+            {
+              "full_name": "Fortin, J.F."
+            },
+            {
+              "full_name": "Grinstein, B."
+            },
+            {
+              "full_name": "Stergiou, A."
+            }
+          ],
+          "label": "42",
+          "misc": [
+            "RG Cycles, Scale vs Conformal Invariance, and All That?, Strong Coupling Gauge Theories in the LHC Perspective (SCGT12): pp. 247-261"
+          ]
+        }
+      },
+      {
+        "reference": {
+          "arxiv_eprint": "1208.3674",
+          "label": "42",
+          "misc": [
+            "Limit Cycles and Conformal Invariance ; [hep-th]"
+          ],
+          "publication_info": {
+            "artid": "184",
+            "journal_title": "JHEP",
+            "journal_volume": "1301",
+            "page_start": "184",
+            "year": 2013
+          }
+        }
+      },
+      {
+        "reference": {
+          "arxiv_eprint": "1111.2649",
+          "authors": [
+            {
+              "full_name": "Curtright, T.L."
+            },
+            {
+              "full_name": "Jin, X."
+            },
+            {
+              "full_name": "Zachos, C.K."
+            }
+          ],
+          "label": "43",
+          "misc": [
+            "Renormalization Group flows, cycles, and c-theorem folklore [hep-th]"
+          ],
+          "publication_info": {
+            "artid": "131601",
+            "journal_title": "Phys.Rev.Lett.",
+            "journal_volume": "108",
+            "year": 2012
+          }
+        }
+      },
+      {
+        "reference": {
+          "arxiv_eprint": "0812.0792",
+          "authors": [
+            {
+              "full_name": "G\u00fcrsoy, U."
+            },
+            {
+              "full_name": "Kiritsis, E."
+            },
+            {
+              "full_name": "Mazzanti, L."
+            },
+            {
+              "full_name": "Nitti, F."
+            }
+          ],
+          "label": "44",
+          "misc": [
+            "Holography and Thermodynamics of 5D Dilaton-gravity [hep-th]"
+          ],
+          "publication_info": {
+            "artid": "033",
+            "journal_title": "JHEP",
+            "journal_volume": "0905",
+            "page_start": "033",
+            "year": 2009
+          }
+        }
+      },
+      {
+        "reference": {
+          "arxiv_eprint": "1006.5461",
+          "authors": [
+            {
+              "full_name": "G\u00fcrsoy, U."
+            },
+            {
+              "full_name": "Kiritsis, E."
+            },
+            {
+              "full_name": "Mazzanti, L."
+            },
+            {
+              "full_name": "Michalogiorgakis, G."
+            },
+            {
+              "full_name": "Nitti, F."
+            }
+          ],
+          "label": "45",
+          "misc": [
+            "Improved Holographic QCD [hep-th]"
+          ],
+          "publication_info": {
+            "artid": "79",
+            "journal_title": "Lect.Notes Phys.",
+            "journal_volume": "828",
+            "page_start": "79",
+            "year": 2011
+          }
+        }
+      },
+      {
+        "reference": {
+          "arxiv_eprint": "1005.4690",
+          "authors": [
+            {
+              "full_name": "Charmousis, C."
+            },
+            {
+              "full_name": "Gouteraux, B."
+            },
+            {
+              "full_name": "Kim, B.S."
+            },
+            {
+              "full_name": "Kiritsis, E."
+            },
+            {
+              "full_name": "Meyer, R."
+            }
+          ],
+          "label": "46",
+          "misc": [
+            "Effective Holographic Theories for low-temperature condensed matter systems ; [hep-th]"
+          ],
+          "publication_info": {
+            "artid": "151",
+            "journal_title": "JHEP",
+            "journal_volume": "1011",
+            "page_start": "151",
+            "year": 2010
+          }
+        }
+      },
+      {
+        "reference": {
+          "arxiv_eprint": "1107.2116",
+          "authors": [
+            {
+              "full_name": "Gouteraux, B."
+            },
+            {
+              "full_name": "Kiritsis, E."
+            }
+          ],
+          "label": "46",
+          "misc": [
+            "Generalized Holographic Quantum Criticality at Finite Density [hep-th]"
+          ],
+          "publication_info": {
+            "artid": "036",
+            "journal_title": "JHEP",
+            "journal_volume": "1112",
+            "page_start": "036",
+            "year": 2011
+          }
+        }
+      },
+      {
+        "reference": {
+          "arxiv_eprint": "hep-th/0002160",
+          "authors": [
+            {
+              "full_name": "Gubser, S.S."
+            }
+          ],
+          "label": "47",
+          "misc": [
+            "Curvature singularities: The Good, the bad, and the naked [ArXiv:"
+          ],
+          "publication_info": {
+            "artid": "679",
+            "journal_title": "Adv.Theor.Math.Phys.",
+            "journal_volume": "4",
+            "page_start": "679",
+            "year": 2000
+          }
+        }
+      },
+      {
+        "reference": {
+          "arxiv_eprint": "hep-th/0008151",
+          "authors": [
+            {
+              "full_name": "Csaki, C."
+            },
+            {
+              "full_name": "Graesser, M.L."
+            },
+            {
+              "full_name": "Kribs, G.D."
+            }
+          ],
+          "label": "48",
+          "misc": [
+            "Radion dynamics and electroweak physics ; [ArXiv:"
+          ],
+          "publication_info": {
+            "artid": "065002",
+            "journal_title": "Phys.Rev.",
+            "journal_volume": "D63",
+            "year": 2001
+          }
+        }
+      },
+      {
+        "reference": {
+          "arxiv_eprint": "hep-ph/0401189",
+          "authors": [
+            {
+              "full_name": "Kofman, L."
+            },
+            {
+              "full_name": "Martin, J."
+            },
+            {
+              "full_name": "Peloso, M."
+            }
+          ],
+          "label": "49",
+          "misc": [
+            "Exact identification of the radion and its coupling to the observable sector [ArXiv:"
+          ],
+          "publication_info": {
+            "artid": "085015",
+            "journal_title": "Phys.Rev.",
+            "journal_volume": "D70",
+            "year": 2004
+          }
+        }
+      },
+      {
+        "reference": {
+          "arxiv_eprint": "hep-th/0611344",
+          "authors": [
+            {
+              "full_name": "Kiritsis, E."
+            },
+            {
+              "full_name": "Nitti, F."
+            }
+          ],
+          "label": "50",
+          "misc": [
+            "On massless 4D gravitons from asymptotically AdS(5) space-times [ArXiv:"
+          ],
+          "publication_info": {
+            "artid": "67",
+            "journal_title": "Nucl.Phys.",
+            "journal_volume": "B772",
+            "page_start": "67",
+            "year": 2007
+          }
+        }
+      },
+      {
+        "reference": {
+          "authors": [
+            {
+              "full_name": "Freedman, DanielZ."
+            }
+          ],
+          "label": "51",
+          "misc": [
+            "Peter Breitenlohner Stability in gauged extended supergravity, Annals Phys. 144  pg. 249"
+          ],
+          "publication_info": {
+            "year": 1982
+          }
+        }
+      },
+      {
+        "reference": {
+          "arxiv_eprint": "hep-th/0007191",
+          "authors": [
+            {
+              "full_name": "Klebanov, I.R."
+            },
+            {
+              "full_name": "Strassler, M.J."
+            }
+          ],
+          "label": "52",
+          "misc": [
+            "Supergravity and a confining gauge theory: Duality cascades and chi SB resolution of naked singularities [ArXiv:"
+          ],
+          "publication_info": {
+            "artid": "052",
+            "journal_title": "JHEP",
+            "journal_volume": "0008",
+            "page_start": "052",
+            "year": 2000
+          }
+        }
+      },
+      {
+        "reference": {
+          "arxiv_eprint": "1112.1261",
+          "authors": [
+            {
+              "full_name": "Jarvinen, M."
+            },
+            {
+              "full_name": "Kiritsis, E."
+            }
+          ],
+          "label": "53",
+          "misc": [
+            "Holographic Models for QCD in the Veneziano Limit ; [hep-ph]"
+          ],
+          "publication_info": {
+            "artid": "002",
+            "journal_title": "JHEP",
+            "journal_volume": "1203",
+            "page_start": "002",
+            "year": 2012
+          }
+        }
+      },
+      {
+        "reference": {
+          "authors": [
+            {
+              "full_name": "Witten, E."
+            }
+          ],
+          "label": "54",
+          "misc": [
+            "Supersymmetry and Morse theory"
+          ],
+          "publication_info": {
+            "artid": "661",
+            "journal_title": "J.Diff.Geom.",
+            "journal_volume": "17",
+            "page_start": "661",
+            "year": 1982
+          }
+        }
+      },
+      {
+        "reference": {
+          "arxiv_eprint": "1608.06638",
+          "authors": [
+            {
+              "full_name": "Gukov, S."
+            }
+          ],
+          "label": "55",
+          "misc": [
+            "RG Flows and Bifurcations [hep-th]"
+          ]
+        }
+      },
+      {
+        "reference": {
+          "arxiv_eprint": "1307.5873",
+          "authors": [
+            {
+              "full_name": "Kiritsis, E."
+            }
+          ],
+          "label": "56",
+          "misc": [
+            "Asymptotic freedom, asymptotic flatness and cosmology"
+          ],
+          "publication_info": {
+            "artid": "011",
+            "journal_title": "JCAP",
+            "journal_volume": "1311",
+            "page_start": "011",
+            "year": 2013
+          }
+        }
+      },
+      {
+        "reference": {
+          "arxiv_eprint": "1407.0820",
+          "authors": [
+            {
+              "full_name": "Binetruy, P."
+            },
+            {
+              "full_name": "Kiritsis, E."
+            },
+            {
+              "full_name": "Mabillard, J."
+            },
+            {
+              "full_name": "Pieroni, M."
+            },
+            {
+              "full_name": "Rosset, C."
+            }
+          ],
+          "label": "56",
+          "misc": [
+            "[hep-th] Universality classes for models of inflation ; [astro-ph.CO]"
+          ],
+          "publication_info": {
+            "artid": "033",
+            "journal_title": "JCAP",
+            "journal_volume": "1504",
+            "page_start": "033",
+            "year": 2015
+          }
+        }
+      },
+      {
+        "reference": {
+          "arxiv_eprint": "hep-th/9905104",
+          "authors": [
+            {
+              "full_name": "Klebanov, I.R."
+            },
+            {
+              "full_name": "Witten, E."
+            }
+          ],
+          "label": "57",
+          "misc": [
+            "AdS/CFT correspondence and symmetry breaking [ArXiv:"
+          ],
+          "publication_info": {
+            "artid": "89",
+            "journal_title": "Nucl.Phys.",
+            "journal_volume": "B556",
+            "page_start": "89",
+            "year": 1999
+          }
+        }
+      },
+      {
+        "reference": {
+          "arxiv_eprint": "hep-th/0112258",
+          "label": "58",
+          "misc": [
+            "Edward Witten, Multi-Trace Operators, Boundary Conditions, And AdS/CFT Correspondence, [ArXiv:"
+          ]
+        }
+      },
+      {
+        "reference": {
+          "arxiv_eprint": "hep-th/9909070",
+          "authors": [
+            {
+              "full_name": "Skenderis, K."
+            },
+            {
+              "full_name": "Townsend, P.K."
+            }
+          ],
+          "label": "59",
+          "misc": [
+            "Gravitational stability and renormalization group flow [ArXiv:"
+          ],
+          "publication_info": {
+            "artid": "46",
+            "journal_title": "Phys.Lett.",
+            "journal_volume": "B468",
+            "page_start": "46",
+            "year": 1999
+          }
+        }
+      },
+      {
+        "reference": {
+          "authors": [
+            {
+              "full_name": "Jordan, D.W."
+            },
+            {
+              "full_name": "Nonlinear, P.Smith"
+            }
+          ],
+          "label": "60",
+          "misc": [
+            "Ordinary Differential Equations, Oxford University Press, , pg. 511"
+          ],
+          "publication_info": {
+            "year": 2007
+          }
+        }
+      },
+      {
+        "reference": {
+          "arxiv_eprint": "hep-th/0112150",
+          "authors": [
+            {
+              "full_name": "Martelli, D."
+            },
+            {
+              "full_name": "Miemiec, A."
+            }
+          ],
+          "label": "61",
+          "misc": [
+            "CFT / CFT interpolating RG flows and the holographic c function [ArXiv:"
+          ],
+          "publication_info": {
+            "artid": "027",
+            "journal_title": "JHEP",
+            "journal_volume": "0204",
+            "page_start": "027",
+            "year": 2002
+          }
+        }
+      },
+      {
+        "reference": {
+          "authors": [
+            {
+              "full_name": "Sibiryakov, S."
+            }
+          ],
+          "label": "62",
+          "misc": [
+            "Private correspondence"
+          ]
+        }
+      },
+      {
+        "reference": {
+          "arxiv_eprint": "1409.4363",
+          "authors": [
+            {
+              "full_name": "Libanov, M."
+            },
+            {
+              "full_name": "Rubakov, V."
+            },
+            {
+              "full_name": "Sibiryakov, S."
+            }
+          ],
+          "label": "63",
+          "misc": [
+            "On holography for (pseudo-)conformal cosmology [hep-th]"
+          ],
+          "publication_info": {
+            "artid": "239",
+            "journal_title": "Phys.Lett.",
+            "journal_volume": "B741",
+            "page_start": "239",
+            "year": 2015
+          }
+        }
+      },
+      {
+        "reference": {
+          "arxiv_eprint": "hep-th/0006215",
+          "authors": [
+            {
+              "full_name": "Kakushadze, Z."
+            }
+          ],
+          "label": "64",
+          "misc": [
+            "Bulk supersymmetry and brane cosmological constant [ArXiv:"
+          ],
+          "publication_info": {
+            "artid": "207",
+            "journal_title": "Phys.Lett.",
+            "journal_volume": "B489",
+            "page_start": "207",
+            "year": 2000
+          }
+        }
+      },
+      {
+        "reference": {
+          "arxiv_eprint": "1112.0573",
+          "authors": [
+            {
+              "full_name": "Huijse, L."
+            },
+            {
+              "full_name": "Sachdev, S."
+            },
+            {
+              "full_name": "Swingle, B."
+            }
+          ],
+          "label": "65",
+          "misc": [
+            "Hidden Fermi surfaces in compressible states of gauge-gravity duality ; [cond-mat.str-el]"
+          ],
+          "publication_info": {
+            "artid": "035121",
+            "journal_title": "Phys.Rev.",
+            "journal_volume": "B85",
+            "year": 2012
+          }
+        }
+      },
+      {
+        "reference": {
+          "authors": [
+            {
+              "full_name": "Buchholz, D."
+            },
+            {
+              "full_name": "Fredenhagen, K."
+            }
+          ],
+          "label": "66",
+          "misc": [
+            "Dilations and Interaction"
+          ],
+          "publication_info": {
+            "artid": "1107",
+            "journal_title": "J.Math.Phys.",
+            "journal_volume": "18",
+            "page_start": "1107",
+            "year": 1977
+          }
+        }
+      },
+      {
+        "reference": {
+          "arxiv_eprint": "1210.3864",
+          "authors": [
+            {
+              "full_name": "Landau, L.D."
+            },
+            {
+              "full_name": "Quantum, E.M.Lifshitz"
+            }
+          ],
+          "imprint": {
+            "publisher": "Pergamon"
+          },
+          "label": "67",
+          "misc": [
+            "Mechanics (Course of theoretical physics: v.3 Press, Oxford (1977), pp. 114?117 S. Weinberg Minimal fields of canonical dimensionality are free [ArXiv:hep-th/"
+          ],
+          "publication_info": {
+            "artid": "105015",
+            "journal_title": "Phys.Rev.",
+            "journal_volume": "D86",
+            "year": 2012
+          }
+        }
+      },
+      {
+        "reference": {
+          "arxiv_eprint": "1405.3652",
+          "authors": [
+            {
+              "full_name": "McAllister, L."
+            },
+            {
+              "full_name": "Silverstein, E."
+            },
+            {
+              "full_name": "Westphal, A."
+            },
+            {
+              "full_name": "Wrase, T."
+            }
+          ],
+          "label": "68",
+          "misc": [
+            "The Powers of Monodromy [hep-th]"
+          ],
+          "publication_info": {
+            "artid": "123",
+            "journal_title": "JHEP",
+            "journal_volume": "1409",
+            "page_start": "123",
+            "year": 2014
+          }
+        }
+      },
+      {
+        "reference": {
+          "arxiv_eprint": "1603.07724",
+          "authors": [
+            {
+              "full_name": "G\u00fcrsoy, U."
+            },
+            {
+              "full_name": "Jansen, A."
+            }
+          ],
+          "label": "69",
+          "misc": [
+            "and W. van der Schee, New dynamical instability in asymptotically anti-de Sitter spacetime [hep-th]"
+          ],
+          "publication_info": {
+            "artid": "061901",
+            "journal_title": "Phys.Rev.",
+            "journal_volume": "D94",
+            "year": 2016
+          }
+        }
+      }
+    ],
+    "self": {
+      "$ref": "http://localhost:5000/api/literature/1498589"
+    },
+    "self_recid": 1498589,
+    "texkeys": [
+      "Kiritsis:2016kog"
+    ],
+    "titles": [
+      {
+        "source": "arXiv",
+        "title": "Exotic RG Flows from Holography"
+      }
+    ],
+    "urls": [
+      {
+        "description": "00017 The  profiles for the scale factor $A(u)$ and the scalar field $\\phi(u)$ corresponding  to the solution represented in figure \\protect\\ref{fig:multi}. Both $\\phi(u)$ and $A(u)$ are smooth at the bounce.",
+        "value": "http://inspirehep.net/record/1498589/files/figures_4branches-phi_UV.png"
+      },
+      {
+        "description": "00005 Bouncing solution.  (a):  bouncing behavior along the $\\phi$ axis for comparison with the standard RG flow of figure \\protect\\ref{fig:RG_intro}. (b):  a sketch of the corresponding superpotential with  two branches. The blue line is the critical curve $B(\\phi)$ defined in \\protect\\eqref{defB}.  The arrows on (a) and (b) indicate the direction of increasing holographic coordinate $u$ or decreasing energy scale.Caption not extracted",
+        "value": "http://inspirehep.net/record/1498589/files/figures_2B_sketch.png"
+      },
+      {
+        "description": "00020",
+        "value": "http://inspirehep.net/record/1498589/files/figures_PlotFlowTanh1fnl_n.png"
+      },
+      {
+        "description": "00003 Standard RG flow for a single coupling. The signs of the $\\b$-function on the intervals between fixed points are indicated. The arrows correspond to the direction of the RG flow as the energy is lowered.",
+        "value": "http://inspirehep.net/record/1498589/files/figures_RG.png"
+      },
+      {
+        "description": "00016 The  profiles for the scale factor $A(u)$ and the scalar field $\\phi(u)$ corresponding  to the solution represented in figure \\protect\\ref{fig:multi}. Both $\\phi(u)$ and $A(u)$ are smooth at the bounce.",
+        "value": "http://inspirehep.net/record/1498589/files/figures_4branches-A_UV.png"
+      },
+      {
+        "description": "00031 The profiles of the scalar field $\\phi(u)$ and the scale factor $A(u)$ corresponding to the first six branches of the cascading solution in figure \\protect\\ref{fig:cascW}. They  are both single-valued functions of $u$ that oscillate an infinite number of times as $u\\to -\\infty$. asymptotes to the negative infinity.",
+        "value": "http://inspirehep.net/record/1498589/files/figures_Cascading_A_n.png"
+      },
+      {
+        "description": "00028 The scale factor profile $A(u)$ corresponding to the solution shown in figure \\protect\\ref{fig:phi8_01}. The AdS length at the fixed points is inversely proportional to the asymptotic slope of $A(u)$, as $|u|$ asymptotes to infinity (see equations \\protect\\eqref{geo_max} and \\protect\\eqref{geo_min}). Because decreasing $u$ takes us to the UV, we see by comparing the purple branch with the yellow branch that the UV fixed point has a larger AdS length than the IR fixed point.",
+        "value": "http://inspirehep.net/record/1498589/files/figures_4branches-A_full_thick.png"
+      },
+      {
+        "description": "00024 Here we plot a numerical solution corresponding to the sketch \\protect\\ref{fig:sketch}. The potential V($\\phi$) given by \\protect\\eqref{V8} with parameters from equation \\protect\\ref{ParamV8}. In the upper left figure we see the region near the infra-red fixed point. From upper right to the lower right figures gradually zoom near the UV fixed point until we see the last branch in the lower right figure. The curve in purple represents the branch of $W(\\phi)$ that reaches the UV fixed point. For the scalar field profile and the scale factor see figures \\protect\\ref{fig:phi8_02} and \\protect\\ref{fig:phi8_03} respectively.",
+        "value": "http://inspirehep.net/record/1498589/files/figures_phi8_01nlfl2.png"
+      },
+      {
+        "description": "00008 Sketch of a flow connecting two minima of the potential.",
+        "value": "http://inspirehep.net/record/1498589/files/figures_PlotFlowTanhb.png"
+      },
+      {
+        "description": "00019 The potential \\protect\\eqref{ir}, the corresponding $B(\\phi)$ and the superpotential \\protect\\eqref{ir2} interpolating between two minima are plotted for $v=k=1$, $d=4$ and $W_0=1.8$. In this particular case the local minimum of $B(\\phi)$ between the two fixed points violates the BF bound and, therefore, does not correspond to a UV fixed point. This kind of solution, however, can also exist in cases when the BF bound is respected.",
+        "value": "http://inspirehep.net/record/1498589/files/figures_PlotFlowTanhb_.png"
+      },
+      {
+        "description": "00021 The potential \\protect\\eqref{ir}, the corresponding $B(\\phi)$ and the superpotential \\protect\\eqref{ir2} are plotted for $v=k=1$, $d=4$ and $W_0=5$. Now $W(\\phi)$ represents a standard holographic RG flow, interpolating between one local minimum of $B(\\phi)$ and one local minimum.Caption not extracted",
+        "value": "http://inspirehep.net/record/1498589/files/figures_PlotFlowTanh2f.png"
+      },
+      {
+        "description": "00015 The superpotential, obtained numerically, for a bouncing solution which starts at a UV fixed point.",
+        "value": "http://inspirehep.net/record/1498589/files/figures_phi8_06fb2.png"
+      },
+      {
+        "description": "00004",
+        "value": "http://inspirehep.net/record/1498589/files/figures_2B_sketch2.png"
+      },
+      {
+        "description": "00037 Plot of the superpotential obtained with the potential \\protect\\eqref{Vcosh} and parameters \\protect\\eqref{parGursoy0}. The green curve represents the special solution $W_*(\\phi)$, obtained numerically. For comparison, the asymptotic behavior \\protect\\eqref{Wcosh_1} is represented by the yellow curve. The special solution is asymptotically parallel to the curve $B(\\phi)$ as $\\phi$ becomes much larger than $ b^{-1}=\\sqrt{3}/2$. This can also be seen from figure \\protect\\ref{fig:Gur2}.",
+        "value": "http://inspirehep.net/record/1498589/files/figures_Leandro1b.png"
+      },
+      {
+        "description": "00018 Plot of the superpotential (red curve) interpolating between two fixed points in a model with polynomial $V(\\phi)$, given by equation \\protect\\ref{app:V12}. This solution represents a standard RG flow between two neighboring fixed points. The green curve represents the end of another standard RG flow that reaches the same IR fixed point, but with increasing $\\phi$ (the UV starting point is not shown in the figure). The shaded area is the forbidden region $W&lt;B$.  The arrows indicate the direction of the holographic coordinate (and of the flow).",
+        "value": "http://inspirehep.net/record/1498589/files/figures_standard2.png"
+      },
+      {
+        "description": "00030 The profiles of the scalar field $\\phi(u)$ and the scale factor $A(u)$ corresponding to the first six branches of the cascading solution in figure \\protect\\ref{fig:cascW}. They  are both single-valued functions of $u$ that oscillate an infinite number of times as $u\\to -\\infty$. asymptotes to the negative infinity.",
+        "value": "http://inspirehep.net/record/1498589/files/figures_Cascading_f_n.png"
+      },
+      {
+        "description": "00034 Among the curves represented in figure \\protect\\ref{fig:Skip1} there are three which correspond to regular RG flows. The solution $W_{st 1}(\\phi)$, represented by the green curve, goes to the nearby extremum, just as does  $W_{st 2}(\\phi)$: these are standard RG flows. The yellow curve, $W_{skip}(\\phi)$, skips the IR fixed point reached by the green curve and increases until it arrives at another IR fixed point. The potential V($\\phi$) is given by \\protect\\eqref{V12} with parameters from equation \\protect\\eqref{ParamSkip}.",
+        "value": "http://inspirehep.net/record/1498589/files/figures_V12_1_01f2.png"
+      },
+      {
+        "description": "00007 A sketch of the holographic RG flow skipping fixed points. (a) Two different flows leave the UV fixed point on the left, corresponding to the same deformation but different operator VEV. (b) The solution $W_{skip}$ corresponding to the yellow curve skips the intermediate IR fixed point and reaches a different IR fixed point farther away. The solutions $W_{st 1}$ and $W_{st 2}$ correspond instead to standard holographic RG flows, as they connect neighboring fixed points.Caption not extracted",
+        "value": "http://inspirehep.net/record/1498589/files/figures_sketch_skip3.png"
+      },
+      {
+        "description": "00025 Here we plot a numerical solution corresponding to the sketch \\protect\\ref{fig:sketch}. The potential V($\\phi$) given by \\protect\\eqref{V8} with parameters from equation \\protect\\ref{ParamV8}. In the upper left figure we see the region near the infra-red fixed point. From upper right to the lower right figures gradually zoom near the UV fixed point until we see the last branch in the lower right figure. The curve in purple represents the branch of $W(\\phi)$ that reaches the UV fixed point. For the scalar field profile and the scale factor see figures \\protect\\ref{fig:phi8_02} and \\protect\\ref{fig:phi8_03} respectively.",
+        "value": "http://inspirehep.net/record/1498589/files/figures_phi8_03nlfl.png"
+      },
+      {
+        "description": "00001 {\\bf Bounce}. The two solutions $W_{\\uparrow}(\\phi)$ and $W_{\\downarrow}(\\phi)$ reach the curve $B(\\phi)$ defined in \\protect\\eqref{defB} at the same point $\\phi_B$ with vanishing derivative. The solutions become complex, therefore unphysical, on the left of the bounce (dotted lines). The arrows indicate the direction of the flow towards lower energies.",
+        "value": "http://inspirehep.net/record/1498589/files/figures_bounce.png"
+      },
+      {
+        "description": "00035 Detail of figure \\protect\\ref{fig:Skip1}  showing the central IR fixed point $\\phi_0$ and of the flows reaching it.",
+        "value": "http://inspirehep.net/record/1498589/files/figures_standard3.png"
+      },
+      {
+        "description": "00000 {\\bf Two branches}. The two solutions $W_\\uparrow(\\phi)$ and $W_\\downarrow(\\phi)$ correspond to the two possible signs of $W'(\\phi)$ in equation \\protect\\eqref{intro2}, for the initial condition $W(\\phi_*)=W_*$. No solution can lie below the curve $B(\\phi)$ defined in \\protect\\eqref{defB}, (here shown with $d=4$). The arrows indicate the direction of increasing holographic coordinate $u$.",
+        "value": "http://inspirehep.net/record/1498589/files/figures_Crossing_generic2.png"
+      },
+      {
+        "description": "00038 Near-UV and near-bounce region. Potential \\protect\\eqref{Vcosh} with parameters \\protect\\eqref{parGursoy0}. The special solution, $W_*(\\phi)$ shows a clear deviation from the exponential asymptotic behavior given by the yellow curve. The red curve, $\\widehat{W}_*(\\phi)$, corresponds to the lower branch of $W(\\phi)$.",
+        "value": "http://inspirehep.net/record/1498589/files/figures_Gursoy6.png"
+      },
+      {
+        "description": "00039 The ratio of $W_*(\\phi)$ and $B(\\phi)$, derived from the potential \\protect\\eqref{Vcosh} with parameters \\protect\\eqref{parGursoy0}, approach a constant, showing this is indeed a good approximation to the special IR-singular solution \\protect\\eqref{Wcosh_1} in this range.",
+        "value": "http://inspirehep.net/record/1498589/files/figures_Gursoy2.png"
+      },
+      {
+        "description": "00040 The blue line represents the boundary $B(\\phi)$ of the forbidden region. The curves labeled $W_*(\\phi)$, $W_*^-(\\phi)$ and $\\widehat W_*(\\phi)$ correspond three branches of the same superpotential. On the total there are four different branches but only three are shown because of scale differences.  We use the potential \\protect\\ref{V8} with parameters \\protect\\eqref{ParamV8}. This is the reason for the near-UV behavior to be very close to the one represented in figure \\protect\\ref{fig:phi8_01} and therefore we omit it here. The behavior of the upper branch for large $\\phi$ is shown in figure \\protect\\ref{fig:All3}.",
+        "value": "http://inspirehep.net/record/1498589/files/figures_inf00n.png"
+      },
+      {
+        "description": "00013 These figures illustrate a bounce at a critical point with (a) $V '&gt;0$ and (b) $V'&lt;0$. The functions $W_{\\uparrow}(\\phi)$ and $W_{\\downarrow}(\\phi)$ together represent a bouncing solution, giving a local minimum (a) or a local maximum (a) of the scalar field at $\\phi=\\phi_B$. The arrows indicate the direction of the flow towards lower energies.",
+        "value": "http://inspirehep.net/record/1498589/files/figures_bouncebis.png"
+      },
+      {
+        "description": "00006 Schematic structure an RG flow between non-neighboring fixed point. This structure is the same as  that of the  set of holographic solutions in figures  \\protect\\ref{fig:Skip2} and \\protect\\ref{fig:Skip3}.",
+        "value": "http://inspirehep.net/record/1498589/files/figures_RG7bis.png"
+      },
+      {
+        "description": "00010 These plots show  numerical solutions of the $W_-$ type (see equation \\protect\\eqref{W_max_-}),  with different values of $C$, obtained from the potential $V(\\phi)=- 12 - 1/4 (\\phi^2- 2)^2$, around the maximum at $\\phi = \\sqrt{2}$.",
+        "value": "http://inspirehep.net/record/1498589/files/figures_Delta2.png"
+      },
+      {
+        "description": "00014 These figures illustrate a bounce at a critical point with (a) $V '&gt;0$ and (b) $V'&lt;0$. The functions $W_{\\uparrow}(\\phi)$ and $W_{\\downarrow}(\\phi)$ together represent a bouncing solution, giving a local minimum (a) or a local maximum (a) of the scalar field at $\\phi=\\phi_B$. The arrows indicate the direction of the flow towards lower energies.",
+        "value": "http://inspirehep.net/record/1498589/files/figures_bounce3bis.png"
+      },
+      {
+        "description": "00029 The plot of a superpotential corresponding to a cascading solution that reaches an IR fixed point (yellow curve) after bouncing an infinite number of times. Here only the first six branches are shown. The potential used here is of the form \\protect\\eqref{V8} with $d = 4$, $\\phi_0 = 7/4$, $\\phi_1 = 5/2$ and $\\Delta(\\Delta-d)=-4$. The corresponding profiles of the scalar field and the scale factor are shown in figure \\protect\\ref{fig:cascfufA}.",
+        "value": "http://inspirehep.net/record/1498589/files/figures_Cascading_W_full_n.png"
+      },
+      {
+        "description": "00033 Some of the  solutions $W(\\phi)$ associated to the potential (\\protect\\ref{V12}),  leaving the same UV fixed-point at $\\phi=0$. Most of them miss either fixed point (e.g. $W_1,W_2,W_3$) or hit the critical curve (e.g. $W_b$) leading to an IR singularity, or a  bounce. The three solutions $W_{st 1}$ and $W_{skip}$ reach two different IR fixed points, at $\\phi_0$ and $\\phi_2$ respectively. Also shown, is  the solution $W_{st 2}$, which leaves the  UV fixed point at $\\phi_1$ and flows backwards to the IR fixed point at $\\phi_0$ (displayed more in detail in figure \\protect\\ref{fig:Skip3}.)",
+        "value": "http://inspirehep.net/record/1498589/files/figures_V12_1_01_manyf_n2.png"
+      },
+      {
+        "description": "00036 Potential \\protect\\eqref{Vcosh} with parameters \\protect\\eqref{parGursoy0}.",
+        "value": "http://inspirehep.net/record/1498589/files/figures_Leandro0.png"
+      },
+      {
+        "description": "00023 Sketch of a bouncing solution where the superpotential has four branches. The arrows indicate the direction of increasing $u$. The actual numerical solution obtained using the potential (\\protect\\ref{V8}) is shown in figure \\protect\\ref{fig:phi8_01}.",
+        "value": "http://inspirehep.net/record/1498589/files/figures_phi8_sketch2.png"
+      },
+      {
+        "description": "00041 The ratio of $W_*(\\phi)$ and $B(\\phi)$ approaches a constant for large $\\phi$ (cf. equation \\protect\\eqref{good2}). Here $W_*(\\phi)$ corresponds to the upper branch of the superpotential plotted in figure \\protect\\eqref{fig:inf00}.",
+        "value": "http://inspirehep.net/record/1498589/files/figures_All3.png"
+      },
+      {
+        "description": "00002 Schematic view of the solutions of the superpotential equation that reach $\\phi \\to +\\infty$. The curve $W_*$ represents the special solution. The curves labeled $C_1$ through $C_6$ are different curves belonging to the continuous family, and they grow exponentially faster than $W_*$.",
+        "value": "http://inspirehep.net/record/1498589/files/figures_Singular-2.png"
+      },
+      {
+        "description": "00027 The scalar field profile $\\phi(u)$ corresponding to the holographic RG flow shown in figure \\protect\\ref{fig:phi8_01}. The solution leaves a UV fixed point when $u$ asymptotes to the negative infinity (purple curve), bounces three times, as indicated by the change of colors, and reaches an IR fixed point as $u$ asymptotes to the positive infinity (yellow curve). The corresponding scale factor is presented in figure \\protect\\ref{fig:phi8_03}.",
+        "value": "http://inspirehep.net/record/1498589/files/figures_4branches-phi_full.png"
+      },
+      {
+        "description": "00026 Here we plot a numerical solution corresponding to the sketch \\protect\\ref{fig:sketch}. The potential V($\\phi$) given by \\protect\\eqref{V8} with parameters from equation \\protect\\ref{ParamV8}. In the upper left figure we see the region near the infra-red fixed point. From upper right to the lower right figures gradually zoom near the UV fixed point until we see the last branch in the lower right figure. The curve in purple represents the branch of $W(\\phi)$ that reaches the UV fixed point. For the scalar field profile and the scale factor see figures \\protect\\ref{fig:phi8_02} and \\protect\\ref{fig:phi8_03} respectively.",
+        "value": "http://inspirehep.net/record/1498589/files/figures_phi8_06fl_n.png"
+      },
+      {
+        "description": "00011 Sketch of solutions of the superpotential equation with critical point at a local minimum of the potential (local maximum of $B(\\phi)$). The $W_+(\\phi)$ and $W_-(\\phi)$  solutions correspond each to two asymptotically AdS geometries in the UV and IR, respectively. The corresponding geometries are not connected. The arrows on $W_-(\\phi)$ and $W_+(\\phi)$ indicate the direction of increasing holographic RG flow.",
+        "value": "http://inspirehep.net/record/1498589/files/figures_Min.png"
+      },
+      {
+        "description": "00032 Potential \\protect\\eqref{V12} with parameters from equation \\protect\\eqref{ParamSkip} and a zoom near the extrema $\\phi_0$ and $\\phi_1$, showing that there is indeed a local maximum of V at $\\phi_1$.",
+        "value": "http://inspirehep.net/record/1498589/files/figures_Skip0.png"
+      },
+      {
+        "description": "00012 Sketch of solutions with a critical point at an inflection point of $V$ (and of $B$). There are two kinds of solutions, labelled $W_+(\\phi)$ and $W_-(\\phi)$, as shown in equations \\protect\\eqref{W_max}, and \\protect\\eqref{W_max_BF}. The superpotential of the $W_+$ kind is unique, while the $W_-$ branch admits infinitely many solutions, parametrized by an integration constant, but only on the side of the critical point with $B''&gt;0$. On the side where $B''&lt;0$ decreases, there is a unique solution of the $W_-$, i.e. solution $W_{-,3}$ in the figure. Therefore, an inflection point behaves on one side as a maximum of the potential (figure \\protect\\ref{fig:max}) and on the other side as a minimum (figure \\protect\\ref{fig:min}). As for the case of minima and maxima, the geometries on either side are disconnected and geodesically complete. The arrows on the curves indicate the direction of increasing holographic coordinate $u$ and of the RG flow.",
+        "value": "http://inspirehep.net/record/1498589/files/figures_Inflection2.png"
+      },
+      {
+        "description": "00009 Sketch of superpotential solutions with critical point at a local maximum of the potential (local minimum of $B(\\phi)$). There are two kinds of solutions, labelled $W_+(\\phi)$ and $W_-(\\phi)$, given in equations \\protect\\eqref{W_max} and \\protect\\eqref{W_max_BF}. The solution of the $W_+$ kind is unique, while there are infinitely many $W_-(\\phi)$ solutions, parametrized by an integration constant of equation \\protect\\eqref{SuperP}. The arrows on $W_-(\\phi)$ and $W_+(\\phi)$ indicate the direction of increasing holographic coordinate $u$, i.e. the direction of the RG flow.",
+        "value": "http://inspirehep.net/record/1498589/files/figures_Max5.png"
+      },
+      {
+        "description": "00022 The potential V($\\phi$) given by equation \\protect\\eqref{V8} with parameters in equation \\protect\\ref{ParamV8}.",
+        "value": "http://inspirehep.net/record/1498589/files/figures_V8t.png"
+      },
+      {
+        "value": "http://inspirehep.net/record/1498589/files/arXiv:1611.05493.pdf"
+      }
+    ]
+    }

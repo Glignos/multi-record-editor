@@ -1,4 +1,6 @@
 # This is a test for the actions
+import json
+import os
 from multiedit import actions
 
 schema_1 = {
@@ -198,3 +200,24 @@ def test_record_creation_3():
     }
     assert actions.run_action(schema_1, record_1, key, action, value, [])\
         == target_object
+
+
+def test_big_record_update():
+    curr_path = os.path.dirname(__file__)
+    with open(os.path.join(curr_path,
+                           'fixtures/test_record_1.json')) as data_file:
+        input_record = json.load(data_file)
+    with open(os.path.join(curr_path,
+                           'fixtures/test_record_1_expected.json'))\
+            as data_file:
+        expected_record = json.load(data_file)
+    with open(os.path.join(curr_path,
+                           'fixtures/schema.json'))\
+            as data_file:
+        schema = json.load(data_file)
+    temp_rec = actions.run_action({}, input_record, 'public_notes/value',
+                                  'update', 'Success',
+                                  ['*Temporary entry*'])
+    assert actions.run_action(schema, temp_rec, 'arxiv_eprints',
+                              'add', {"categories": ["Success"]},
+                              []) == expected_record
