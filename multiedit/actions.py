@@ -40,6 +40,9 @@ def apply_action(schema, record, keys, action,
             else:
                 apply_action(new_schema, array_record, new_keys, action,
                              values_to_check, value_to_input)
+                if action == 'delete':
+                    if not record[key]:
+                        del(record[key])
     else:
         if len(new_keys) == 0:
             if action == 'update' and record[key] in values_to_check:
@@ -52,6 +55,9 @@ def apply_action(schema, record, keys, action,
         else:
             apply_action(new_schema, record[key], new_keys, action,
                          values_to_check, value_to_input)
+            if action == 'delete':
+                if not record[key]:
+                    del (record[key])
 
 
 def create_schema_record(schema, path, value):

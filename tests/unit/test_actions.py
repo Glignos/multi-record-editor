@@ -1,6 +1,7 @@
 # This is a test for the actions
 import json
 import os
+
 from multiedit import actions
 
 schema_1 = {
@@ -153,6 +154,21 @@ def test_deletion_array():
     values_to_check = ['val6']
     value = ''
     assert actions.run_action({}, record, key, action, value, values_to_check)\
+        == expected_map
+
+
+def test_deletion_empty_rec():
+    record = {
+        'key1': {
+            'key2': {
+                'key3': 'val'
+            }
+        }
+    }
+    key = 'key1/key2/key3'
+    action = 'delete'
+    expected_map = {}
+    assert actions.run_action({}, record, key, action, '', ['val']) \
         == expected_map
 
 
