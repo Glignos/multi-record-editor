@@ -16,6 +16,9 @@
           {
             "schema": "INSPIRE BAI",
             "value": "O.Benhar.1"
+          },
+          {
+            "value": "Success"
           }
         ],
         "name_suggest": {
@@ -51,7 +54,7 @@
             "value": "Rome U."
           },
           {
-            "value": "INFN, Rome"
+            "value": "Not INF"
           }
         ],
         "full_name": "Maiani, Luciano",

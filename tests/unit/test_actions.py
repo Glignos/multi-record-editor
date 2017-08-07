@@ -87,8 +87,9 @@ def test_update_array():
     action = 'update'
     values_to_check = ['val4']
     value = 'success'
-    assert actions.run_action({}, record, key, action, value, values_to_check)\
-        == expected_map
+    assert actions.run_action({}, record, key, action,
+                              value, values_to_check,
+                              'ignore', '') == expected_map
 
 
 def test_update_multiple_update_array():
@@ -105,8 +106,9 @@ def test_update_multiple_update_array():
     action = 'update'
     values_to_check = ['val4', 'val5']
     value = 'success'
-    assert actions.run_action({}, record, key, action, value, values_to_check)\
-        == expected_map
+    assert actions.run_action({}, record, key, action,
+                              value, values_to_check,
+                              'ignore', '',) == expected_map
 
 
 def test_addition_array():
@@ -129,8 +131,9 @@ def test_addition_array():
     action = 'add'
     values_to_check = []
     value = 'success'
-    assert actions.run_action({}, record, key, action, value, values_to_check)\
-        == expected_map
+    assert actions.run_action({}, record, key, action,
+                              value, values_to_check,
+                              'ignore', '') == expected_map
 
 
 def test_deletion_array():
@@ -153,8 +156,9 @@ def test_deletion_array():
     action = 'delete'
     values_to_check = ['val6']
     value = ''
-    assert actions.run_action({}, record, key, action, value, values_to_check)\
-        == expected_map
+    assert actions.run_action({}, record, key, action,
+                              value, values_to_check,
+                              'ignore', '') == expected_map
 
 
 def test_deletion_empty_rec():
@@ -168,8 +172,9 @@ def test_deletion_empty_rec():
     key = 'key1/key2/key3'
     action = 'delete'
     expected_map = {}
-    assert actions.run_action({}, record, key, action, '', ['val']) \
-        == expected_map
+    assert actions.run_action({}, record, key, action,
+                              '', ['val'],
+                              'ignore', '') == expected_map
 
 
 def test_record_creation():
@@ -214,8 +219,9 @@ def test_record_creation_3():
           },
         ],
     }
-    assert actions.run_action(schema_1, record_1, key, action, value, [])\
-        == target_object
+    assert actions.run_action(schema_1, record_1, key, action,
+                              value, [], 'ignore',
+                              '') == target_object
 
 
 def test_big_record_update():
@@ -233,7 +239,46 @@ def test_big_record_update():
         schema = json.load(data_file)
     temp_rec = actions.run_action({}, input_record, 'public_notes/value',
                                   'update', 'Success',
-                                  ['*Temporary entry*'])
+                                  ['*Temporary entry*'], 'ignore', '')
     assert actions.run_action(schema, temp_rec, 'arxiv_eprints',
                               'add', {"categories": ["Success"]},
-                              []) == expected_record
+                              [], 'ignore', '') == expected_record
+
+
+def test_big_record_where_delition():
+    curr_path = os.path.dirname(__file__)
+    with open(os.path.join(curr_path,
+                           'fixtures/test_record_3.json')) as data_file:
+        input_record = json.load(data_file)
+    with open(os.path.join(curr_path,
+                           'fixtures/test_record_3_expected.json'))\
+            as data_file:
+        expected_record = json.load(data_file)
+    with open(os.path.join(curr_path,
+                           'fixtures/schema.json'))\
+            as data_file:
+        schema = json.load(data_file)
+    assert actions.run_action(schema, input_record,
+                              'inspire_categories/source',
+                              'delete', {},
+                              [], 'inspire_categories/term',
+                              'Phenomenology-HEP') == expected_record
+
+
+def test_big_record_where_nested_addition():
+    curr_path = os.path.dirname(__file__)
+    with open(os.path.join(curr_path,
+                           'fixtures/test_record_4.json')) as data_file:
+        input_record = json.load(data_file)
+    with open(os.path.join(curr_path,
+                           'fixtures/test_record_4_expected.json'))\
+            as data_file:
+        expected_record = json.load(data_file)
+    with open(os.path.join(curr_path,
+                           'fixtures/schema.json'))\
+            as data_file:
+        schema = json.load(data_file)
+    assert actions.run_action(schema, input_record, 'authors/ids',
+                              'add', {"value": "Success"},
+                              [], 'authors/affiliations/value',
+                              'INFN, Rome') == expected_record
