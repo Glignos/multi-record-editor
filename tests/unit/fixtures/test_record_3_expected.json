@@ -35,7 +35,7 @@
     "legacy_creation_date": "2016-11-16",
     "public_notes": [
       {
-        "value": "*Temporary record*"
+        "value": "Success"
       }
     ],
     "publication_info": [
@@ -44,6 +44,12 @@
         "journal_title": "EPJ Web Conf.",
         "journal_volume": "127",
         "year": 2016
+      },
+      {
+        "cnum": "Success",
+        "journal_title": "Success",
+        "journal_volume": "Success",
+        "year": 2017
       }
     ],
     "self": {
@@ -51,7 +57,8 @@
     },
     "self_recid": 1498175,
     "texkeys": [
-      "Proceedings:2016iak"
+      "Proceedings:2016iak",
+      "Success"
     ],
     "titles": [
       {

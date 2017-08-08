@@ -5,7 +5,10 @@ def run_action(schema, record, key, action, value,
                values_to_check, where_key, where_value):
     """Initial function to run the recursive one."""
     keys = key.split('/')
-    where_keys = where_key.split('/')
+    if where_key:
+        where_keys = where_key.split('/')
+    else:
+        where_keys = []
     apply_action(schema, record, keys, action,
                  values_to_check, value, where_keys, where_value)
     return record
@@ -24,21 +27,16 @@ def apply_action(schema, record, keys, action,
             new_schema = schema['properties'][key]
         elif schema['type'] == 'array':
             new_schema = schema['items']['properties'][key]
-    try:
-        record[key]
-        pass
-    except KeyError:
+    if not record.get(key) and action == 'add':
         record.update(create_schema_record(schema, keys, value_to_input))
         return
-    temp_record = record[key]
-    if where_keys[0] != 'ignore' and len(where_keys) != 0 \
-            and key != where_keys[0]:
+    if len(where_keys) != 0 and key != where_keys[0]:
         if check_value(record, where_keys, where_value) == 0:
             return
         else:
-            where_keys[0] == 'ignore'
-    if isinstance(temp_record, list):
-        for index, array_record in enumerate(temp_record):
+            where_keys = []
+    if isinstance(record[key], list):
+        for index, array_record in enumerate(record[key]):
             if len(new_keys) == 0:
                 if action == 'update' and array_record in values_to_check:
                     record[key][index] = value_to_input
@@ -50,7 +48,7 @@ def apply_action(schema, record, keys, action,
                             or array_record in values_to_check:
                         record[key].pop(index)
             else:
-                if where_keys[0] != 'ignore':
+                if len(where_keys) != 0:
                     new_where_keys = where_keys[:]
                     new_where_keys.pop(0)
                 else:
@@ -73,7 +71,7 @@ def apply_action(schema, record, keys, action,
                         or record[key] in values_to_check:
                     del(record[key])
         else:
-            if where_keys[0] != 'ignore':
+            if len(where_keys) != 0:
                 new_where_keys = where_keys[:]
                 new_where_keys.pop(0)
             else:
@@ -108,10 +106,6 @@ def create_schema_record(schema, path, value):
                 temp_record[key] = [{}]
                 temp_record = temp_record[key][0]
     temp_record[path[-1]] = value
-    # if isinstance(record[path[0]], list):
-    #     return record[path[0]][0]
-    # else:
-    #     return record[path[0]]
     return record
 
 
@@ -119,30 +113,23 @@ def check_value(record, keys, value_to_check):
     """Where continues to find the value."""
     new_keys = keys[:]
     key = new_keys.pop(0)
-    try:
-        record[key]
-        pass
-    except KeyError:
-        return 0
+    if key not in record:
+        return False
     temp_record = record[key]
     if isinstance(temp_record, list):
         for index, array_record in enumerate(temp_record):
             if len(new_keys) == 0:
                 if array_record == value_to_check:
-                    return 1
-                else:
-                    return 0
+                    return True
             else:
                 if check_value(array_record,
                                new_keys, value_to_check):
-                    return 1
+                    return True
     else:
         if len(new_keys) == 0:
             if temp_record == value_to_check:
-                return 1
-            else:
-                return 0
+                return True
         else:
             return check_value(temp_record,
                                new_keys, value_to_check)
-    return 0
+    return False
