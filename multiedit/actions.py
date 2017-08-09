@@ -1,8 +1,10 @@
 """This is the code used for applying the curator actions to the records."""
 
+import re
+
 
 def run_action(schema, record, key, action, value,
-               values_to_check, where_key, where_value):
+               values_to_check, regex, where_key, where_value):
     """Initial function to run the recursive one."""
     keys = key.split('/')
     if where_key:
@@ -10,12 +12,12 @@ def run_action(schema, record, key, action, value,
     else:
         where_keys = []
     apply_action(schema, record, keys, action,
-                 values_to_check, value, where_keys, where_value)
+                 values_to_check, regex, value, where_keys, where_value)
     return record
 
 
 def apply_action(schema, record, keys, action,
-                 values_to_check, value_to_input,
+                 values_to_check, regex, value_to_input,
                  where_keys, where_value):
     """Recursive function to change a record object."""
     new_keys = keys[:]
@@ -38,8 +40,11 @@ def apply_action(schema, record, keys, action,
     if isinstance(record[key], list):
         for index, array_record in enumerate(record[key]):
             if len(new_keys) == 0:
-                if action == 'update' and array_record in values_to_check:
-                    record[key][index] = value_to_input
+                if action == 'update':
+                    if regex and re.search(re.escape(values_to_check[0]), record[key][index]):
+                        record[key][index] = value_to_input
+                    elif array_record in values_to_check:
+                        record[key][index] = value_to_input
                 elif action == 'add':
                     record[key].append(value_to_input)
                     return
@@ -54,15 +59,18 @@ def apply_action(schema, record, keys, action,
                 else:
                     new_where_keys = where_keys
                 apply_action(new_schema, array_record, new_keys, action,
-                             values_to_check, value_to_input,
+                             values_to_check, regex, value_to_input,
                              new_where_keys, where_value)
                 if action == 'delete':  # dont leave empty objects
                     if not record[key]:
                         del(record[key])
     else:
         if len(new_keys) == 0:
-            if action == 'update' and record[key] in values_to_check:
-                record[key] = value_to_input
+            if action == 'update':
+                if regex and re.search(re.escape(values_to_check[0]), record[key]):
+                    record[key] = value_to_input
+                elif record[key] in values_to_check:
+                    record[key] = value_to_input
             elif action == 'add':
                 record[key] = value_to_input
                 return
@@ -77,7 +85,7 @@ def apply_action(schema, record, keys, action,
             else:
                 new_where_keys = where_keys
             apply_action(new_schema, record[key], new_keys, action,
-                         values_to_check, value_to_input,
+                         values_to_check, regex, value_to_input,
                          new_where_keys, where_value)
             if action == 'delete':
                 if not record[key]:
