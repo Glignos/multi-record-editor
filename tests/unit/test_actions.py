@@ -307,14 +307,15 @@ def test_big_record_regex_where():
                            'fixtures/test_record_4.json')) as data_file:
         input_record = json.load(data_file)
     with open(os.path.join(curr_path,
-                           'fixtures/test_record_4_expected.json'))\
+                           'fixtures/test_record_4_expected_regex.json'))\
             as data_file:
         expected_record = json.load(data_file)
     with open(os.path.join(curr_path,
                            'fixtures/schema.json'))\
             as data_file:
         schema = json.load(data_file)
-    assert actions.run_action(schema, input_record, 'authors/ids',
-                              'add', {"value": "Success"},
-                              [], False, 'authors/affiliations/value',
-                              'INFN, Rome') == expected_record
+    assert actions.run_action(schema, input_record,
+                              'authors/affiliations/value',
+                              'update', "Success",
+                              ['Rome'], True, 'authors/signature_block',
+                              'BANARo') == expected_record

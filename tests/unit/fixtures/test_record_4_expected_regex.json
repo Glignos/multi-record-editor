@@ -8,7 +8,13 @@
       {
         "affiliations": [
           {
-            "value": "INFN, Rome"
+            "value": "Success"
+          },
+          {
+            "value": "Success"
+          },
+          {
+            "value": "INFN"
           }
         ],
         "full_name": "Benhar, Omar",
@@ -16,9 +22,6 @@
           {
             "schema": "INSPIRE BAI",
             "value": "O.Benhar.1"
-          },
-          {
-            "value": "Success"
           }
         ],
         "name_suggest": {

@@ -37,59 +37,27 @@ def apply_action(schema, record, keys, action,
             return
         else:
             where_keys = []
-    if isinstance(record[key], list):
-        for index, array_record in enumerate(record[key]):
-            if len(new_keys) == 0:
-                if action == 'update':
-                    if regex and re.search(re.escape(values_to_check[0]), record[key][index]):
-                        record[key][index] = value_to_input
-                    elif array_record in values_to_check:
-                        record[key][index] = value_to_input
-                elif action == 'add':
-                    record[key].append(value_to_input)
-                    return
-                elif action == 'delete':
-                    if len(values_to_check) == 0\
-                            or array_record in values_to_check:
-                        record[key].pop(index)
-            else:
-                if len(where_keys) != 0:
-                    new_where_keys = where_keys[:]
-                    new_where_keys.pop(0)
-                else:
-                    new_where_keys = where_keys
+    if len(new_keys) == 0:
+        apply_action_to_field(record, key, regex,
+                              action, value_to_input, values_to_check)
+    else:
+        if len(where_keys) != 0:
+            new_where_keys = where_keys[:]
+            new_where_keys.pop(0)
+        else:
+            new_where_keys = where_keys
+        if isinstance(record[key], list):
+            for array_record in record[key]:
                 apply_action(new_schema, array_record, new_keys, action,
                              values_to_check, regex, value_to_input,
                              new_where_keys, where_value)
-                if action == 'delete':  # dont leave empty objects
-                    if not record[key]:
-                        del(record[key])
-    else:
-        if len(new_keys) == 0:
-            if action == 'update':
-                if regex and re.search(re.escape(values_to_check[0]), record[key]):
-                    record[key] = value_to_input
-                elif record[key] in values_to_check:
-                    record[key] = value_to_input
-            elif action == 'add':
-                record[key] = value_to_input
-                return
-            elif action == 'delete':
-                if len(values_to_check) == 0 \
-                        or record[key] in values_to_check:
-                    del(record[key])
         else:
-            if len(where_keys) != 0:
-                new_where_keys = where_keys[:]
-                new_where_keys.pop(0)
-            else:
-                new_where_keys = where_keys
             apply_action(new_schema, record[key], new_keys, action,
                          values_to_check, regex, value_to_input,
                          new_where_keys, where_value)
-            if action == 'delete':
-                if not record[key]:
-                    del (record[key])
+    if action == 'delete':  # dont leave empty objects
+        if not record[key]:
+            del (record[key])
 
 
 def create_schema_record(schema, path, value):
@@ -141,3 +109,48 @@ def check_value(record, keys, value_to_check):
             return check_value(temp_record,
                                new_keys, value_to_check)
     return False
+
+
+def apply_action_to_field(record, key, regex,
+                          action, value, value_to_check):
+    """Function for applying action to object or array."""
+    if isinstance(record[key], list):
+        apply_to_array(record, key, regex, action, value, value_to_check)
+    else:
+        apply_to_object(record, key, regex, action, value, value_to_check)
+
+
+def apply_to_array(record, key, regex, action, value, values_to_check):
+    """Applying action to array."""
+    for index, array_record in enumerate(record[key]):
+        if action == 'update':
+            if regex and re.search(
+                    re.escape(values_to_check[0]),
+                    record[key][index]):
+                record[key][index] = value
+            elif array_record in values_to_check:
+                record[key][index] = value
+        elif action == 'add':
+            record[key].append(value)
+            return  # In that case we want to stop looping
+        elif action == 'delete':
+            if len(values_to_check) == 0 \
+                    or array_record in values_to_check:
+                record[key].pop(index)
+
+
+def apply_to_object(record, key, regex, action, value, values_to_check):
+    """Apllying action to Object."""
+    if action == 'update':
+        if regex and re.search(
+                re.escape(values_to_check[0]),
+                record[key]):
+            record[key] = value
+        elif record[key] in values_to_check:
+            record[key] = value
+    elif action == 'add':
+        record[key] = value
+    elif action == 'delete':
+        if len(values_to_check) == 0 \
+                or record[key] in values_to_check:
+            record[key] = ''  # Mark for deletion
