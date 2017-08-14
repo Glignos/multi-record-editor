@@ -24,7 +24,6 @@ def apply_action(schema, record, keys, action,
     key = new_keys.pop(0)
     new_schema = {}
     if schema:  # fixme in a more stable version the
-        #  schema should always be present
         if schema['type'] == 'object':
             new_schema = schema['properties'][key]
         elif schema['type'] == 'array':
