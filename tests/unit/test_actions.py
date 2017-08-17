@@ -181,6 +181,17 @@ def test_deletion_empty_rec():
                               '', '') == expected_map
 
 
+def test_field_not_existing():
+    """should test sub_record creation for missing object"""
+    key = ['abstracts', 'source']
+    record = {'abstracts': [{'not_source': 'success'}]}
+    expected_map = {'abstracts': [{'not_source': 'success'}]}
+    action = 'Update'
+    assert actions.run_action({}, record, key, action,
+                              'test', ['val'], False,
+                              '', '') == expected_map
+
+
 def test_record_creation():
     """should test sub_record creation for missing object"""
     key = ['abstracts', 'source']

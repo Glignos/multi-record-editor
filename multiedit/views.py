@@ -26,10 +26,12 @@
 
 from __future__ import absolute_import, print_function
 
-from flask import Blueprint, render_template,request
-from flask_babelex import gettext as _
 import requests
-#from actions import *
+from flask import Blueprint, render_template, request, jsonify
+from flask_babelex import gettext as _
+import json
+
+from multiedit import actions
 
 blueprint = Blueprint(
     'multiedit',
@@ -39,18 +41,8 @@ blueprint = Blueprint(
 )
 
 
-"""@blueprint.route("/multiedit")
-def index():
-    Basic view
-    return render_template(
-        "multiedit/index.html",
-        module_name=_('MultiEdit'))"""
-
-
 @blueprint.route("/multiedit/update", methods=['POST'])
 def index():
     """Basic view."""
-    from remote_pdb import RemotePdb
-    RemotePdb('0.0.0.0', 4444).set_trace()
-    return request.data
-
+    user_actions = request.json
+    return jsonify(actions.run_user_actions(user_actions))
