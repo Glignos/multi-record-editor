@@ -30,6 +30,7 @@ import requests
 from flask import Blueprint, render_template, request, jsonify
 from flask_babelex import gettext as _
 import json
+from .api import LiteratureSearch
 
 from multiedit import actions
 
@@ -46,3 +47,13 @@ def index():
     """Basic view."""
     user_actions = request.json
     return jsonify(actions.run_user_actions(user_actions))
+
+
+@blueprint.route("/multiedit/search")
+def search():
+    """Basic view."""
+    from remote_pdb import RemotePdb
+    RemotePdb('0.0.0.0', 4444).set_trace()
+    search = LiteratureSearch()
+    return search.query({'match_all': {}}).scan().to_dict()
+

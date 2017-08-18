@@ -1,0 +1,105 @@
+"""MULTIEDITOR app configuration."""
+
+
+SEARCH_ELASTIC_HOSTS = ['localhost']
+SEARCH_UI_SEARCH_TEMPLATE = 'search/search.html'
+SEARCH_UI_SEARCH_API = '/api/literature/'
+SEARCH_UI_SEARCH_INDEX = 'records-hep'
+INSPIRE_ENDPOINT_TO_INDEX = {
+    'authors': 'records-authors',
+    'conferences': 'records-conferences',
+    'experiments': 'records-experiments',
+    'institutions': 'records-institutions',
+    'jobs': 'records-jobs',
+    'journals': 'records-journals',
+    'literature': 'records-hep',
+}
+
+SEARCH_ELASTIC_KEYWORD_MAPPING = {
+    None: ['_all'],
+    "control_number": ["control_number"],
+    "author": ["authors.full_name", "authors.alternative_names"],
+    "exactauthor": ["exactauthor.raw", "authors.full_name",
+                    "authors.alternative_names", "authors.ids.value"
+                    ],
+    "abstract": ["abstracts.value"],
+    "collaboration": ["collaboration.value", "collaboration.raw^2"],
+    "tc": ["collection"],
+    "collection": ["collections.primary"],
+    "doi": ["dois.value"],
+    "doc_type": ["facet_inspire_doc_type"],
+    "formulas": ["facet_formulas"],
+    "affiliation": ["authors.affiliations.value", "corporate_author"],
+    "reportnumber": ["report_numbers.value", "arxiv_eprints.value"],
+    "refersto": ["references.recid"],
+    "experiment": ["accelerator_experiments.experiment"],
+    "experiment_f": ["accelerator_experiments.facet_experiment"],
+    "wwwlab": ["experiment_name.wwwlab"],
+    "fc": ["field_code"],
+    "advisors": ["advisors.name"],
+    "title": ["titles.title", "titles.title.raw^2",
+              "title_translation.title", "title_variation",
+              "title_translation.subtitle", "titles.subtitle"],
+    "cnum": ["publication_info.cnum"],
+    "980": [
+        "collections.primary",
+        "collections.secondary",
+        "collections.deleted",
+    ],
+    "980__a": ["collections.primary"],
+    "980__b": ["collections.secondary"],
+    "542__l": ["information_relating_to_copyright_status.copyright_status"],
+    "conf_subject": ["field_code.value"],
+    "037__c": ["arxiv_eprints.categories"],
+    "246__a": ["titles.title"],
+    "595": ["hidden_notes"],
+    "650__a": ["inspire_categories.term"],
+    "695__a": ["keywords.keyword"],
+    "695__e": ["energy_ranges"],
+    "773__y": ["publication_info.year"],
+    "authorcount": ["authors.full_name"],
+    "arxiv": ["arxiv_eprints.value"],
+    "caption": ["urls.description"],
+    "country": ["authors.affiliations.value"],
+    "firstauthor": ["authors.full_name", "authors.alternative_names"],
+    "fulltext": ["urls.value"],
+    "journal": ["publication_info.recid",
+                "publication_info.page_start",
+                "publication_info.artid",
+                "publication_info.page_range",
+                "publication_info.journal_issue",
+                "publication_info.conf_acronym",
+                "publication_info.journal_title",
+                "publication_info.reportnumber",
+                "publication_info.journal_volume",
+                "publication_info.cnum",
+                "publication_info.pubinfo_freetext",
+                "publication_info.year_raw",
+                "publication_info.isbn",
+                "publication_info.note"
+                ],
+    "journal_page": ["publication_info.page_start",
+                     "publication_info.page_range"
+                     "publication_info.artid"],
+    "keyword": ["keywords.keyword"],
+    "note": ["public_notes.value"],
+    "reference": ["references.doi", "references.report_number",
+                  "references.journal_pubnote"
+                  ],
+    "subject": ["inspire_categories.term"],
+    "texkey": ["external_system_numbers.value",
+               "external_system_numbers.obsolete"
+               ],
+    "year": ["imprints.date",
+             "preprint_date",
+             "thesis.date",
+             "publication_info.year"
+             ],
+    "confnumber": ["publication_info.cnum"],
+    "earliest_date": ["earliest_date"],
+    "address": ["corporate_author"],
+    'datecreated': ['legacy_creation_date'],
+    "recid": ["control_number"],
+    "cited": ["citation_count"],
+    "topcite": ["citation_count"]
+}
